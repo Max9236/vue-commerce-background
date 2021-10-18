@@ -5,3 +5,55 @@ body,
   margin: 0;
   height: 100vh;
 }
+
+.el-breadcrumb {
+  margin-bottom: 15px;
+}
+
+.el-card {
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.18)!important;
+  /* border: 1px solid red; */
+}
+.el-table {
+  margin-top: 15px;
+}
+
+.border-top {
+  border-top: 1px solid rgba(97, 97, 97, .2);
+}
+
+.vertical {
+  display: flex;
+  align-items: center;
+}
+
+/* 头像旋转 */
+.pic_spin {
+  width: 50px;
+}
+.pic_spin img {
+  width: 100%;
+  border-radius: 50%;
+  transition:all 500ms;	
+}
+.pic_spin img:hover{
+	transform:rotate(360deg); 
+};
+
+/* 
+如果是无限旋转则是如下代码：
+:hover {
+transform: rotate(666turn);
+transition-delay: 1s;
+transition-property: all;
+transition-duration: 59s;
+transition-timing-function: cubic-bezier(.34,0,.84,1);
+}
+
+transform: rotate(666turn)：定义了transform的2d旋转，turn表示 圈(单位) 。
+transition-delay：定义了延时多长时间执行。
+transition-property：指定具有过渡效果的css属性
+transition-duration：定义了执行时间。
+transition-timing-function：定义了执行速度。
+
+*/

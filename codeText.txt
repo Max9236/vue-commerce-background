@@ -1,9 +1,35 @@
 scoped  scope： n. 范围 -> .vue单独使用样式
+
 redirect  vt. 使改方向；重新寄送 -> 路由地址重定向
+
 component component n. 组成部份，成分 -> 组件
+
 container n. 容器；集装箱，货柜  container
+
 global  adj. 全球的；总体的；球形的
+
 justify-content: flex-end  flex布局横轴end端对齐
+
 box-sizing: border-box IE盒模型 -> 宽度=内容+padding
-prefix vt. 加前缀；将某事物加在前面
-validate vt. 证实，验证；确认；使生效
+
+prefix vt. 加前缀；将某事物加在前面 
+
+validate vt. 证实，验证；确认；使生效 -> element表单验证
+
+interceptors  n. 截击舰，[航][军] 截击机；拦截器 -> axios配置请求拦截器
+
+ <!-- 
+          数字转换为字符串
+
+            var num  = 123；
+
+            1.num.toString
+
+            2."" + num
+
+            3.String(num)
+
+-->
+
+cursor:pointer; -> 鼠标小手
+fold  v. 折叠；可折叠；

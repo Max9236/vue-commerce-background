@@ -2,6 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/login.vue'
 import Home from '../components/home.vue'
+import Welcome from '../components/welcome.vue'
+// 二级菜单
+import Users from '../components/submenu/users.vue'
+import Rights from '../components/submenu/rights.vue'
+import Roles from '../components/submenu/roles.vue'
 
 import { Message } from 'element-ui';
 
@@ -10,7 +15,14 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', redirect: '/login', },
   { path: '/login', component: Login },
-  { path: '/home', component: Home },
+  { path: '/home', component: Home,
+    redirect:'/welcome',
+    children:[
+    { path: '/welcome', component: Welcome },
+    { path: '/users', component: Users },
+    { path: '/rights', component: Rights },
+    { path: '/roles', component: Roles }
+  ]},
   
 ]
 
